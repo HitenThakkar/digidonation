@@ -30,3 +30,10 @@ module.exports.login = async function(req,res)
             res.json({data:req.body,msg:"Invalid Credentials",rcode:-9})
     }
 }
+
+//get all users
+module.exports.getAllUsers = function(req,res){
+    UserModel.find().then(data=>{
+        res.json({data:data,msg:"User retrived",rcode:200})
+    })
+}
