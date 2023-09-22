@@ -1,4 +1,5 @@
 const categoryModel = require("../model/categoryModel")
+const CategoryModel = require("../model/categoryModel")
 
 module.exports.addCategoty = async function(req,res){
     
