@@ -1,3 +1,4 @@
+const CategoryModel = require("../model/categoryModel")
 const ItemModel = require("../model/itemModel")
 
 module.exports.addItem = async function(req,res){
